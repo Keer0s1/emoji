@@ -1,0 +1,98 @@
+.emoji-finder{
+  min-height: 100vh;
+  background: #eceef0;
+  font-family: 'Inter', sans-serif;
+}
+
+.emoji-finder__hero{
+  background: linear-gradient(135deg, #2f6d78 0%, #24545e 100%);
+  padding: 56px 24px 40px;
+  text-align: center;
+}
+
+.emoji-finder__title{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
+  color: #d7f2f4;
+  letter-spacing: -1px;
+}
+
+.emoji-finder__subtitle{
+  margin: 10px 0 28px;
+  color: #bcdde0;
+  font-size: 16px;
+}
+
+.emoji-finder__input{
+  width: 100%;
+  max-width: 520px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-sizing:border-box;
+}
+
+.emoji-finder__status{
+  text-align: center;
+  color: #7a8288;
+}
+
+.emoji-finder__status--error{
+  color: #c0392b;
+}
+
+.emoji-finder__content{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+
+.emoji-finder__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.emoji-finder__empty{
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #7a8288;
+}
+
+.emoji-card{
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: default;
+}
+
+.emoji-card:hover{
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.emoji-card__symbol {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.emoji-card__name{
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.emoji-card__keywords{
+  margin-top: 6px;
+  font-size: 12px;
+  color: #8a9198;
+  line-height: 1.4;
+}

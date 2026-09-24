@@ -1,0 +1,29 @@
+{
+  "name": "emojifinder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/app.js",
+    "start": "concurrently -n CLIENT,SERVER -c cyan,yellow \"npm run dev\" \"npm run server\"",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint src",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "emojibase-data": "^17.0.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "concurrently": "^9.1.2",
+    "oxlint": "^0.16.0",
+    "typescript": "^5.8.3",
+    "vite": "^8.2.2"
+  }
+}
